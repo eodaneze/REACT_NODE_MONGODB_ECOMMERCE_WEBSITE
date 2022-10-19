@@ -17,7 +17,7 @@ const data = {
       
         {
             id: 2,
-            name:'2022 Mens Running Sneakers - Black',
+            name:'2022 Mens Running Sneakers',
             slug: 'mens-shoe',
             category: 'Shoes',
             image: '/images/shoe-3.jpg',
@@ -30,7 +30,7 @@ const data = {
         },
         {
             id: 3,
-            name:'2022 Mens Casual Trend Shoes Running Sneakers - Black',
+            name:'2022 Mens Casual Trend Shoes',
             slug: 'casual-shoe',
             category: 'Shoes',
             image: '/images/shoe-4.jpg',
@@ -43,7 +43,7 @@ const data = {
         },
         {
             id: 3,
-            name:'2022 Mens Casual Trend Shoes Running Sneakers - Black',
+            name:'2022 Mens Casual Trend Shoes',
             slug: 'casual-shoe-sneakers',
             category: 'Shoes',
             image: '/images/shoe-2.jpg',

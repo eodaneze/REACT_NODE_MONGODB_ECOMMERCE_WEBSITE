@@ -17,7 +17,7 @@ a{
   text-decoration: none;
   color: black;
 }
-.products{
+/* .products{
    display: grid;
    grid-template-columns: repeat(4, 1fr);
    box-shadow: 1px 3px 15px #ccc;
@@ -26,7 +26,7 @@ a{
    gap: 2rem;
    text-align: center;
    
-}
+} */
 main{
   flex: 1;
 }
@@ -37,7 +37,13 @@ main{
 .product{
   width: 100%;
 }
-
+.rating span{
+  color: orangered;
+}
+.btn{
+  background-color: orangered !important;
+  color: white;
+}
 @media(max-width: 800px){
   .products{
     grid-template-columns: repeat(2, 1fr);

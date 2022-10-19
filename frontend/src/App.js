@@ -14,7 +14,7 @@ function App() {
       <div className="d-flex flex-column site-container">
         <header>
           <Navbar bg='dark' varient="dark">
-             <Container>
+             <Container className="mt-5">
                 <LinkContainer to='/'>
                    <Navbar.Brand className="text-white">Amazona</Navbar.Brand>
                 </LinkContainer>

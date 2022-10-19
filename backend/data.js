@@ -8,11 +8,11 @@ const data = {
             category: 'Shoes',
             image: '/images/sheo.jpg',
             price:500,
-            countInStock: 10,
+            countInStock: 0,
             brand: 'Nike',
             rating: 4.5,
             numReviews: 10,
-            description: 'This is the hottest-selling Hot Wheels sneaker this year, fashionable and trendy, with a confident accent. The classic round toe cap has a good performance in waterproof and anti-collision, bringing you comfort and safety, every step is enjoyment. The upper is made of high-quality mesh fabric with a very good texture. The lining of the shoes is made of breathable lining, which has good abrasion resistance and good breathability, and is comfortable and dry to wear. The rubber sole is soft and fashionable, stable and non-slip. The heel of the shoe is made of a special material, which presents a beautiful blue from different angles.'
+            description: 'This is the hottest-selling Hot Wheels sneaker this year, fashionable and trendy, with a confident accent. The classic round toe cap has a good performance in waterproof and anti-collision, bringing you comfort and safety, every step is enjoyment. The upper is made of high-quality mesh fabric with a very good texture. '
         },
       
         {

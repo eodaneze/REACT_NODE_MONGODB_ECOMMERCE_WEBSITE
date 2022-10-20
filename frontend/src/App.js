@@ -27,7 +27,7 @@ function App() {
                     <Link to='/cart' className="nav-link text-white h2">Cart <i className="fa fa-shopping-cart"></i></Link>
                     {cart.cartItems.length > 0 && (
                        
-                       <span className="cart">{cart.cartItems.length}</span>
+                       <span className="cart">{cart.cartItems.reduce((a, c) => a + c.quantity, 0)}</span>
                     )}
                 </Nav>
                 

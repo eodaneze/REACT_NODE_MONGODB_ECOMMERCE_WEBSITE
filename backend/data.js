@@ -2,7 +2,7 @@ const data = {
     products: [
         {
              
-            id: 1,
+            _id: '1',
             name:'Mens Sneakers White',
             slug: 'mens-Sneakers-white',
             category: 'Shoes',
@@ -16,7 +16,7 @@ const data = {
         },
       
         {
-            id: 2,
+            _id: '2',
             name:'2022 Mens Running Sneakers',
             slug: 'mens-shoe',
             category: 'Shoes',
@@ -29,7 +29,7 @@ const data = {
             description: 'This is the hottest-selling Hot Wheels sneaker this year, fashionable and trendy, with a confident accent. The classic round toe cap has a good performance in waterproof and anti-collision, bringing you comfort and safety, every step is enjoyment. The upper is made of high-quality mesh fabric with a very good texture. The lining of the shoes is made of breathable lining, which has good abrasion resistance and good breathability, and is comfortable and dry to wear. The rubber sole is soft and fashionable, stable and non-slip. The heel of the shoe is made of a special material, which presents a beautiful blue from different angles.'
         },
         {
-            id: 3,
+            _id: '3',
             name:'2022 Mens Casual Trend Shoes',
             slug: 'casual-shoe',
             category: 'Shoes',
@@ -42,7 +42,7 @@ const data = {
             description: 'This is the hottest-selling Hot Wheels sneaker this year, fashionable and trendy, with a confident accent. The classic round toe cap has a good performance in waterproof and anti-collision, bringing you comfort and safety, every step is enjoyment. The upper is made of high-quality mesh fabric with a very good texture. The lining of the shoes is made of breathable lining, which has good abrasion resistance and good breathability, and is comfortable and dry to wear. The rubber sole is soft and fashionable, stable and non-slip. The heel of the shoe is made of a special material, which presents a beautiful blue from different angles.'
         },
         {
-            id: 3,
+            _id: '4',
             name:'2022 Mens Casual Trend Shoes',
             slug: 'casual-shoe-sneakers',
             category: 'Shoes',

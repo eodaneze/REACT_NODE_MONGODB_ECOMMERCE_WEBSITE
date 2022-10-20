@@ -40,10 +40,10 @@ main{
 .rating span{
   color: orangered;
 }
-.btn{
+/* .btn{
   background-color: orangered !important;
   color: white;
-}
+} */
 @media(max-width: 800px){
   .products{
     grid-template-columns: repeat(2, 1fr);
@@ -70,4 +70,7 @@ main{
   height: 2rem;
   border-radius: 50%;
   font-weight: bolder;
+  }
+  .img-thumbnail{
+   height: 80px;
   }

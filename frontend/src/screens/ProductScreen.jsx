@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useReducer, useEffect, useContext } from "react";
 import { Badge, Button, Card, Col, ListGroup, Row } from "react-bootstrap";
 import { Helmet } from "react-helmet-async";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import LoadingBox from "../components/LoadingBox";
 import MessageBox from "../components/MessageBox";
 import Rating from "../components/Rating";
@@ -22,6 +22,7 @@ const reducer = (state, action) => {
   }
 };
 const ProductScreen = () => {
+  const navigate = useNavigate()
   const params = useParams();
 
   const { slug } = params;
@@ -49,22 +50,24 @@ const ProductScreen = () => {
 
   const { state, dispatch: cxtDispatch } = useContext(Store);
 
-  const {cart} = state;
-  const addToCartHandler = async() => {
-     const existItem = cart.cartItems.find((x) => x._id === product._id);
-     const quantity = existItem ? existItem.quantity + 1 : 1;
-     
-     const{ data } = await axios.get(`/api/products/${product._id}`);
+  const { cart } = state;
+  const addToCartHandler = async () => {
+    const existItem = cart.cartItems.find((x) => x._id === product._id);
+    const quantity = existItem ? existItem.quantity + 1 : 1;
 
-     if(data.countInStock < quantity){
-       window.alert('Sorry. Product is out of stock');
-       return;
-     }
+    const { data } = await axios.get(`/api/products/${product._id}`);
 
-     cxtDispatch({
-       type: "CART_ADD_ITEM",
-       payload:{...product, quantity}
-     })
+    if (data.countInStock < quantity) {
+      window.alert("Sorry. Product is out of stock");
+      return;
+    }
+
+    cxtDispatch({
+      type: "CART_ADD_ITEM",
+      payload: { ...product, quantity },
+    });
+    
+    navigate('/cart')
   };
   return loading ? (
     <LoadingBox />

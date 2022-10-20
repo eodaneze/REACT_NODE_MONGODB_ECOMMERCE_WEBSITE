@@ -40,10 +40,10 @@ main{
 .rating span{
   color: orangered;
 }
-/* .btn{
+.btn{
   background-color: orangered !important;
   color: white;
-} */
+}
 @media(max-width: 800px){
   .products{
     grid-template-columns: repeat(2, 1fr);

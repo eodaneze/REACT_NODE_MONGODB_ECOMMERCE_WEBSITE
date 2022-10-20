@@ -60,3 +60,14 @@ main{
 .img-large{
   width: 100%;
 }
+.cart{
+  background-color: orangered;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  font-weight: bolder;
+  }

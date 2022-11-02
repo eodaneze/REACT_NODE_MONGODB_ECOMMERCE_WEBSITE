@@ -31,8 +31,9 @@ export default function SigninScreen() {
       localStorage.setItem('userInfo', JSON.stringify(data));
       navigate(redirect || '/')
       // console.log(data)
-    } catch (err) {
-      toast.error('Invalid email or password');
+    } catch (error) {
+      // toast.error('Invalid email or password')
+      toast.error(getError(error));
     }
   };
 

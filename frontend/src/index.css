@@ -77,3 +77,20 @@ main{
   .small-container {
     max-width: 600px;
   }
+  .all-container{
+    margin: 0 40%;
+  }
+  .footer-logo span{
+    color: orangered;
+  }
+
+ .checkout-steps > div{
+   border-bottom: 5px solid #a0a0a0;
+   color: #a0a0a0;
+   border-radius: 10px;
+ }
+ .checkout-steps > div.active{
+   border-bottom: 5px solid orangered;
+   color: orangered;
+   border-radius: 10px;
+ }

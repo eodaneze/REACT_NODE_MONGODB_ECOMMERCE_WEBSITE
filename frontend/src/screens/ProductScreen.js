@@ -76,7 +76,7 @@ const ProductScreen = () => {
   ) : (
     <div>
       <Row className="mt-5">
-        <Col md={4}>
+        <Col md={4} className='mb-5'>
           <img className="img-large" src={product.image} alt={product.name} />
         </Col>
         <Col md={5}>

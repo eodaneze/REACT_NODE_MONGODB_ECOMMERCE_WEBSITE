@@ -14,6 +14,7 @@ import CartScreen from "./screens/CartScreen";
 import SigninScreen from "./screens/SigninScreen";
 import ShippingAddressScreen from "./screens/ShippingAddressScreen";
 import Footer from "./components/Footer";
+import SignupScreen from "./screens/SignupScreen";
 
 
 function App() {
@@ -49,7 +50,7 @@ function App() {
                 {userInfo ? (
                   <NavDropdown
                     className="text-white"
-                    title={userInfo.email.slice(0, 6)}
+                    title={userInfo.email.slice(0, 3)}
                     id="basic-nav-dropdown"
                   >
                     <LinkContainer to="/profile">
@@ -82,6 +83,7 @@ function App() {
               <Route path="/product/:slug" element={<ProductScreen />} />
               <Route path="/cart" element={<CartScreen />} />
               <Route path="/signin" element={<SigninScreen />} />
+              <Route path="/signup" element={<SignupScreen />} />
               <Route path="/shipping" element={<ShippingAddressScreen />} />
               <Route path="/" element={<HomeScreen />} />
             </Routes>

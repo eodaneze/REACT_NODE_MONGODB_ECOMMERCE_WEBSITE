@@ -85,12 +85,10 @@ main{
   }
 
  .checkout-steps > div{
-   border-bottom: 5px solid #a0a0a0;
+   border-bottom: 0.2rem solid #a0a0a0;
    color: #a0a0a0;
-   border-radius: 10px;
  }
  .checkout-steps > div.active{
-   border-bottom: 5px solid orangered;
+   border-bottom: 0.2rem solid orangered;
    color: orangered;
-   border-radius: 10px;
  }

@@ -18,6 +18,7 @@ import SignupScreen from "./screens/SignupScreen";
 import PaymentMethodScreen from "./screens/PaymentMethodScreen";
 import PlaceOrderScreen from "./screens/PlaceOrderScreen";
 import OrderScreen from "./screens/OrderScreen";
+import OrderHistoryScreen from "./screens/OrderHistoryScreen";
 
 
 function App() {
@@ -36,12 +37,16 @@ function App() {
       <div className="d-flex flex-column site-container">
         <ToastContainer position="top-center" limit={1} />
         <header>
-          <Navbar bg="dark" varient="dark">
+          <Navbar bg="dark" varient="dark" expend="lg">
             <Container className="mt-5">
               <LinkContainer to="/">
                 <Navbar.Brand className="text-white h1">DanShop</Navbar.Brand>
               </LinkContainer>
-              <Nav className="ms-auto">
+              <Navbar.Toggle aria-controls="basic-navbar-nav" />
+              <Navbar.Collapse id="basic-navbar-nav">
+
+
+              <Nav className="me-auto w-100 justify-content-end">
                 <Link to="/cart" className="nav-link text-white h2">
                   Cart <i className="fa fa-shopping-cart"></i>
                 </Link>
@@ -78,6 +83,7 @@ function App() {
                   </Link>
                 )}
               </Nav>
+              </Navbar.Collapse>
             </Container>
           </Navbar>
         </header>
@@ -91,7 +97,8 @@ function App() {
               <Route path="/shipping" element={<ShippingAddressScreen />} />
               <Route path="/placeorder" element={<PlaceOrderScreen />} />
               <Route path="/order/:id" element={<OrderScreen />} />
-              <Route path="/payment" element={<PaymentMethodScreen />} />
+              <Route path="/order/:id" element={<OrderScreen />} />
+              <Route path="/orderhistory" element={<OrderHistoryScreen />} />
               <Route path="/" element={<HomeScreen />} />
             </Routes>
           </Container>

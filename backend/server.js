@@ -22,6 +22,12 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+
+app.get('/api/keys/paypal', (req, res) => {
+  res.send(process.env.PAYAL_CLIENT_ID || 'sb');
+});
+
+
 app.use("/api/seed", seedRouter);
 // test
 app.use("/api/products", productRouter);

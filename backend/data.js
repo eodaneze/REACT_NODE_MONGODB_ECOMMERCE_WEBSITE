@@ -47,7 +47,7 @@ const data = {
     {
       name: "2022 Mens Casual Trend Shoes",
       slug: "casual-shoe",
-      category: "Shoes",
+      category: "Watch",
       image: "/images/shoe-4.jpg",
       price: 500,
       countInStock: 6,

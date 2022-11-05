@@ -34,7 +34,7 @@ const ShippingAddressScreen = () => {
         city,
         postalCode,
         country,
-      },
+      }, 
     });
     localStorage.setItem(
       "shippingAddress",

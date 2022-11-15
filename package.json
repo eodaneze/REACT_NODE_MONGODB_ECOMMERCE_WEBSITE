@@ -5,7 +5,7 @@
   "name": "node_react_store",
   "description": "",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "devDependencies": {},
   "scripts": {
     "build": "cd backend && npm install  && cd ../frontend && npm install && npm run build",

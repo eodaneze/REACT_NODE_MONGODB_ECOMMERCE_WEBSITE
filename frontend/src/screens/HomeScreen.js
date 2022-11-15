@@ -8,6 +8,7 @@ import Product from "../components/Product";
 import { Helmet } from "react-helmet-async";
 import LoadingBox from "../components/LoadingBox";
 import MessageBox from "../components/MessageBox";
+import Hero from "../components/Hero";
 
 
 const reducer = (state, action) => {
@@ -53,6 +54,7 @@ const HomeScreen = () => {
           <title>DanShop</title>
       </Helmet>
       
+       <Hero />
       <h1>Featured Products</h1>
       <div className="products">
         {loading ? (

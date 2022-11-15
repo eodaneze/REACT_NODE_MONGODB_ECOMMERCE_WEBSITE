@@ -113,3 +113,34 @@ main{
 .active-nav {
   left: 0;
 }
+
+.all-hero{
+  background-color: #F9F3F0;
+  padding: 60px;
+  margin-top: 30px;
+  margin-bottom: 4rem;
+}
+
+.hero-header h3 span{
+  display: block;
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+.shop-btn{
+  margin-right: 20px;
+
+}
+.shop-btn a{
+  background-color: orangered;
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+}
+
+
+@media(max-width: 800px){
+  .all-hero{
+    flex-direction: column;
+  }
+}
